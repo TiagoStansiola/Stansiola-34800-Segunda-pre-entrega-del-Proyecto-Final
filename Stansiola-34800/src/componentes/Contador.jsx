@@ -4,10 +4,19 @@ const Contador = () => {
 const [contador,setContador]=useState(0)
 
     const agregar=()=>{
-        setContador(contador+1)
+      contador==10
+      ?
+      setContador(10)
+      :
+      setContador(contador+1)
+
     }
     const restar=()=>{
-        setContador(contador-1)
+      contador==0
+      ?
+      setContador(0)
+      :
+      setContador(contador-1)
     }
 
   return (
