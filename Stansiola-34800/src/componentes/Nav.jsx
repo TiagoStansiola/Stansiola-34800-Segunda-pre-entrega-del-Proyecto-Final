@@ -68,6 +68,8 @@ const  Nav=()=>{
                     texto={"Nosotros"}
                     /> 
                     </div>
+                    
+
                      
                     
                     

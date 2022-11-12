@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
 
-const Boton =({texto,icono})=>{
+const Boton =({texto,icono,link})=>{
     return(
-        <Link to='/cart'><button className="flex items-center rounded bg-amber-400 h-12 p-6 m-2 font-sans">
+        <Link to={link}><button className="flex items-center rounded bg-amber-400 h-12 p-6 m-2 font-sans">
             <div className="mr-5">
-                <img src={icono} alt="icono" />
+                <img class="w-11"src={icono} alt="icono" />
 
             </div>
             <div>
