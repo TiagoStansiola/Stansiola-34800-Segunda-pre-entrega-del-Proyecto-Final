@@ -1,5 +1,6 @@
+import React from 'react'
 
-const ItemListContainer = ({greeting}) => {
+const HomeContainer = ({greeting}) => {
   return (
     <div className="m-10">
         <p className="text-center text-2xl">{greeting}</p>
@@ -7,4 +8,6 @@ const ItemListContainer = ({greeting}) => {
   )
 }
 
-export default ItemListContainer
+export default HomeContainer
+
+

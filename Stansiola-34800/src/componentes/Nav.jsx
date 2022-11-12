@@ -1,5 +1,6 @@
 import Boton from "../componentes/Boton";
 import Anchor from "../componentes/Anchor";
+import { Link } from "react-router-dom";
 
 
 const  Nav=()=>{
@@ -9,7 +10,7 @@ const  Nav=()=>{
             <div className="flex mx-11 max-h-36">
                 <div className="inline-block align-middle w-40 px-4 mt-8">
                     
-                        <img src="./src/assets/mcdonalds-logo.png" alt="Mac-Logo" className=""/>
+                        <Link to='/'><img src="./src/assets/mcdonalds-logo.png" alt="Mac-Logo" className=""/></Link>
                     
                 </div>
 
@@ -18,10 +19,12 @@ const  Nav=()=>{
                         
                         <div className="grid grid-cols-2 items-center text-sm mr-10 mt-4">
                             <Anchor
+                                link={'/Work'}
                                 texto={"Trabajo con nosotros"}
                             />
                             <div >
                             <Anchor
+                                link={'/Contact'}
                                 texto={"Contacto"}
                             />
                             </div>
@@ -31,10 +34,12 @@ const  Nav=()=>{
 
                         <div className="flex items-center">
                             <Boton
+                            link={'/cart'}
                                 icono={'./src/assets/icono2.png'}
                                 texto={"Carrito"}
                             />
                             <Boton
+                            link={'/TakeAway'}
                                 icono={'./src/assets/icono1.png'}
                                 texto={"Pedi y Retira"}
                             />
@@ -47,15 +52,19 @@ const  Nav=()=>{
                     
                     <div className="flex items-stretch text-lg"  >
                     <Anchor
+                    link={'/producto'}
                     texto={"Productos"}
                     /> 
                     <Anchor
+                    link={'/locales'}
                     texto={"Locales"}
                     /> 
                     <Anchor
+                    link={'/family'}
                     texto={"En familia"}
                     /> 
                     <Anchor
+                    link={'/nosotros'}
                     texto={"Nosotros"}
                     /> 
                     </div>
